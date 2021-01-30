@@ -1,26 +1,24 @@
 <template>
-<div class=" max-w-full max-h-full bg-teal-100">
-  <div class="container">
-    <div>
-      <Logo :avatar_url="avatar_url"/>
-      <h1 class="title">niggelgame</h1>
-      <div class="links">
-        <NuxtLink class="button--green" to="/docs">Documentation</NuxtLink>
-        <a
-          href="https://github.com/niggelgame"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-      <div class="my-6 sm:my-10">
-        
+  <div class="max-w-full max-h-full bg-teal-100">
+    <div class="container">
+      <div>
+        <Logo :avatar_url="avatar_url" />
+        <h1 class="title">niggelgame</h1>
+        <div class="links">
+          <NuxtLink class="button--green" to="/docs">Documentation</NuxtLink>
+          <a
+            href="https://github.com/niggelgame"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--grey"
+          >
+            GitHub
+          </a>
+        </div>
+        <div class="my-6 sm:my-10"></div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script lang="ts">
@@ -29,19 +27,18 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      avatar_url: ''
+      avatar_url: '',
     }
   },
   async fetch() {
-    this.avatar_url = await fetch("https://api.github.com/users/niggelgame").then(res => res.json().then(res => res["avatar_url"]))
-  }
+    this.avatar_url = await fetch(
+      'https://api.github.com/users/niggelgame'
+    ).then((res) => res.json().then((res) => res.avatar_url))
+  },
 })
 </script>
 
-
 <style>
-
-
 .body {
   @apply bg-teal-100;
 }

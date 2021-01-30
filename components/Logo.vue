@@ -1,7 +1,5 @@
 <template>
-
-  <img class="rounded-full NuxtLogo max-w-sm" :src=avatar_url alt="Avatar">
-  
+  <img class="rounded-full NuxtLogo max-w-sm" :src="avatar_url" alt="Avatar" />
 </template>
 
 <script lang="ts">
@@ -11,8 +9,8 @@ export default Vue.extend({
     avatar_url: {
       type: String,
       required: true,
-    }
-  }
+    },
+  },
 })
 </script>
 
