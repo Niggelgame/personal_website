@@ -16,7 +16,7 @@
         "@nuxt/typescript-runtime": "^2.1.0",
         "@nuxtjs/pwa": "^3.3.5",
         "core-js": "^3.9.1",
-        "nuxt": "^2.15.2",
+        "nuxt": "^2.15.3",
         "v-tooltip": "^2.1.2"
     },
     "devDependencies": {
