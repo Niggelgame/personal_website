@@ -1,22 +1,23 @@
 <template>
-  <div class="max-w-full max-h-full bg-teal-100">
-    <div class="container">
-      <div>
-        <Logo :avatar_url="avatar_url" />
-        <h1 class="title">niggelgame</h1>
-        <div class="links">
-          <NuxtLink class="button--green" to="/docs">Documentation</NuxtLink>
-          <a
-            href="https://github.com/niggelgame"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--grey"
-          >
-            GitHub
-          </a>
-        </div>
-        <div class="my-6 sm:my-10"></div>
+  <div class="flex flex-col h-screen bg-teal-100">
+    <div class="flex flex-col justify-center items-center py-8 flex-grow">
+      <Logo
+        class="flex flex-col items-center w-2/3 md:w-1/2 lg:w-1/4 xl:max-w-md"
+        :avatar_url="avatar_url"
+      />
+      <h1 class="text-3xl sm:text-6xl mt-4 sm:mt-6 title">niggelgame</h1>
+      <div class="links my-6 sm:my-10">
+        <NuxtLink class="button--green" to="/docs">Documentation</NuxtLink>
+        <a
+          href="https://github.com/niggelgame"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
       </div>
+      <div class="my-6 sm:my-10"></div>
     </div>
   </div>
 </template>
@@ -67,7 +68,6 @@ export default Vue.extend({
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
@@ -82,5 +82,6 @@ export default Vue.extend({
 
 .links {
   padding-top: 15px;
+  text-align: center;
 }
 </style>

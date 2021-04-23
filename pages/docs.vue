@@ -2,7 +2,7 @@
   <div class="max-w-full max-h-full bg-teal-100">
     <div class="container">
       <div>
-        <h1 class="title">no docs found.</h1>
+        <h1 class="text-3xl sm:text-6xl mt-4 sm:mt-6 title">no docs found.</h1>
         <NuxtLink class="error-link" to="/">Go back home</NuxtLink>
       </div>
     </div>
