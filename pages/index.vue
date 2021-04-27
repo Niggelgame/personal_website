@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen bg-teal-100">
+  <div class="flex flex-col min-h-screen bg-teal-100">
     <div class="flex flex-col justify-center items-center py-8 flex-grow">
       <Logo
         class="flex flex-col items-center w-2/3 md:w-1/2 lg:w-1/4 xl:max-w-md"
