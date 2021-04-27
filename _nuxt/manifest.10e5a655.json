@@ -1,7 +1,6 @@
 {
   "name": "personal-website",
   "short_name": "personal-website",
-  "description": "## Build Setup",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.5f6a36.png",
