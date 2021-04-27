@@ -8,9 +8,9 @@ export default Vue.extend({
   props: {
     avatar_url: {
       type: String,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 })
 </script>
 
