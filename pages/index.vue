@@ -5,19 +5,33 @@
         class="flex flex-col items-center w-2/3 md:w-1/2 lg:w-1/4 xl:max-w-md"
         :avatar_url="avatar_url"
       />
-      <h1 class="text-3xl sm:text-6xl mt-4 sm:mt-6 title">niggelgame</h1>
+      <h1 class="text-3xl sm:text-6xl mt-4 sm:mt-6 title">
+        niggelgame
+      </h1>
       <div class="links my-6 sm:my-10">
-        <NuxtLink class="button--green" to="/docs">Documentation</NuxtLink>
+        <NuxtLink class="button--green m-1" to="/docs">
+          Documentation
+        </NuxtLink>
         <a
           href="https://github.com/niggelgame"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="button--grey m-1"
         >
           GitHub
         </a>
       </div>
-      <div class="my-6 sm:my-10"></div>
+      <div class="my-6 sm:my-8">
+        <a href="https://discord.gg/TjgC4wD" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+          <fa :icon="['fab', 'discord']" class="text-2xl sm:text-4xl md:text-6xl" />
+        </a>
+        <a href="https://twitch.tv/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+          <fa :icon="['fab', 'twitch']" class="text-2xl sm:text-4xl md:text-6xl" />
+        </a>
+        <a href="https://twitter.com/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+          <fa :icon="['fab', 'twitter']" class="text-2xl sm:text-4xl md:text-6xl" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -26,16 +40,16 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data() {
+  data () {
     return {
-      avatar_url: '',
+      avatar_url: ''
     }
   },
-  async fetch() {
+  async fetch () {
     this.avatar_url = await fetch(
       'https://api.github.com/users/niggelgame'
-    ).then((res) => res.json().then((res) => res.avatar_url))
-  },
+    ).then(res => res.json().then(res => res.avatar_url))
+  }
 })
 </script>
 
