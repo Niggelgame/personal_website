@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="flex justify-end p-2">
-      <p class="text-xs text-darkgrey opacity-50">© niggelgame 2021</p>
+      <p class="text-xs text-grey-700 opacity-75">© niggelgame 2021</p>
     </div>
   </div>
 </template>
