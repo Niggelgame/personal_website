@@ -28,7 +28,7 @@ html {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #3b8070;
-  color: #3b8070;
+  color: #22543d;
   text-decoration: none;
   padding: 10px 30px;
 }

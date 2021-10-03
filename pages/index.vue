@@ -22,16 +22,22 @@
         </a>
       </div>
       <div class="my-6 sm:my-8">
-        <a href="https://discord.gg/TjgC4wD" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+        <a href="https://discord.gg/TjgC4wD" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base" rel="noreferrer" aria-label="Discord">
           <fa :icon="['fab', 'discord']" class="text-2xl sm:text-4xl md:text-6xl" />
         </a>
-        <a href="https://twitch.tv/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+        <a href="https://twitch.tv/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base" rel="noreferrer" aria-label="Twitch">
           <fa :icon="['fab', 'twitch']" class="text-2xl sm:text-4xl md:text-6xl" />
         </a>
-        <a href="https://twitter.com/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base">
+        <a href="https://twitter.com/niggelgame" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base" rel="noreferrer" aria-label="Twitter">
           <fa :icon="['fab', 'twitter']" class="text-2xl sm:text-4xl md:text-6xl" />
         </a>
+        <a href="https://www.linkedin.com/in/nicolas-edelmann/" target="_blank" class="mr-3 sm:mr-6 last:mr-0 relative hover:text-green-base" rel="noreferrer" aria-label="LinkedIn">
+          <fa :icon="['fab', 'linkedin']" class="text-2xl sm:text-4xl md:text-6xl" />
+        </a>
       </div>
+    </div>
+    <div class="flex justify-end p-2">
+      <p class="text-xs text-darkgrey opacity-50">© niggelgame 2021</p>
     </div>
   </div>
 </template>

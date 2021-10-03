@@ -7,7 +7,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'niggelgame\'s more than premium website' },
       {
         hid: 'og:title',
         name: 'og:title',
@@ -79,7 +79,7 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      brands: ['faDiscord', 'faTwitch', 'faTwitter']
+      brands: ['faDiscord', 'faTwitch', 'faTwitter', 'faLinkedin']
     }
   }
 }
