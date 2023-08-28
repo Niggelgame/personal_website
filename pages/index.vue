@@ -3,7 +3,7 @@
     <div class="flex flex-col justify-center items-center py-8 flex-grow">
       <Logo
         class="flex flex-col items-center w-2/3 md:w-1/2 lg:w-1/4 xl:max-w-md"
-        :avatar_url="avatar_url"
+        :avatar_url="https://github.com/niggelgame.png"
       />
       <h1 class="text-3xl sm:text-6xl mt-4 sm:mt-6 title">
         niggelgame
@@ -37,27 +37,10 @@
       </div>
     </div>
     <div class="flex justify-end p-2">
-      <p class="text-xs text-grey-700 opacity-75">© niggelgame 2021</p>
+      <p class="text-xs text-grey-700 opacity-75">© niggelgame 2023</p>
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  data () {
-    return {
-      avatar_url: ''
-    }
-  },
-  async fetch () {
-    this.avatar_url = await fetch(
-      'https://api.github.com/users/niggelgame'
-    ).then(res => res.json().then(res => res.avatar_url))
-  }
-})
-</script>
 
 <style>
 .body {
