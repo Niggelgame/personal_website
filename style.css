@@ -1,0 +1,134 @@
+:root {
+    color-scheme: light;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #242a29;
+    background: #fefdf8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.profile {
+    width: min(100% - 3rem, 48rem);
+    margin: 0 auto;
+    padding: 7rem 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.profile-photo {
+    display: grid;
+    flex: 0 0 10rem;
+    width: 10rem;
+    height: 10rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #e4e9e3;
+    color: #60766b;
+    font-size: 2rem;
+    object-fit: cover;
+}
+
+.eyebrow {
+    margin: 0 0 0.4rem;
+    color: #62736b;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    color: #8c9992;
+}
+
+a {
+    color: #315e4d;
+    text-decoration-color: #a7b9ae;
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+    outline: 2px solid #315e4d;
+    outline-offset: 4px;
+}
+
+.about {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dfe4dd;
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.about p {
+    max-width: 40rem;
+    margin: 0;
+}
+
+.section {
+    margin-top: 0.5rem;
+    padding-top: 2rem;
+}
+
+.section p {
+    max-width: 40rem;
+    margin: 0;
+}
+
+.updated p {
+    margin: 2rem 0 0;
+    font-size: 0.775rem;
+    color: #888888;
+}
+
+@media (max-width: 36rem) {
+    .profile {
+        padding: 4rem 0;
+    }
+
+    .profile-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .profile-photo {
+        flex-basis: auto;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .about {
+        margin-top: 2.5rem;
+    }
+}
